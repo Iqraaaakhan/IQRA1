@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(252, 252, 244);
+        }
+        h1{
+            text-decoration-line: underline;
+            color: black;
+        }
+        #Student{
+            background-color: rgb(232, 205, 198);
+            border-collapse: collapse;
+            text-align: center;
+            color: black;
+            width: 1400px;
+            height: 600px;
+        }
+        #Student td, #Student th {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        #Student tr:nth-child(even){ background-color: rgb(246, 201, 216);}
+        #Student tr:hover{ background-color: rgb(229, 161, 151);}
+        #Student th {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 5px;
+            text-align: center;
+            color: black;
+        }
+        div.sticky{
+            position: sticky;
+            top: 0px;
+            background-color: aquamarine;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: blue;
+            padding: 5px;
+            border: 3px solid black;
+        }
+        div.sticky1{
+            position: sticky;
+            bottom: 0px;
+            background-color: aquamarine;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: blue;
+            padding: 5px;
+            border: 3px solid black;
+        }
+        div.relative{
+            position: relative;
+            left: 15px;
+            background-color: aquamarine;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: blue;
+            padding: 5px;
+            border: 3px solid black;
+        }
+        div.ancestor{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: blue;
+            padding: 5px;
+            border: 3px solid black;
+        }
+        
+        div.absolute{
+            position: absolute;
+            top: 80px;
+            right: 0px;
+            width: 150px;
+            height: 200px;
+            background-color: yellow;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: blue;
+            padding: 5px;
+            border: 3px solid black;
+        }
+
+        div.sidebar{
+            position: fixed;
+            padding: 5px;
+            background-color: rgb(255, 187, 210);
+            border: 3px solid black;
+            height: 100%;
+            text-align: center;
+            color: black;
+
+        }
+        div.popup{
+            position: fixed;
+            top: 40;
+            bottom: 10%;
+            right: 5%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(236, 236, 112);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: none;
+
+        }
+        .box1{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            top: 95%;
+            left: 7cqmax;
+            z-index: 1;
+        }
+        
+        .box2{
+            position: absolute;
+            width: 120px;
+            height: 110px;
+            background-color: blue;
+            top: 100%;
+            left: 90;
+            z-index: 2;
+        }
+        
+        
+       
+    </style>
+</head>
+<body>
+    <center>
+        <div class="sticky">LEARNING CSS</div>
+        <div class="relative">Eg for relative</div>
+        <div class="sidebar">Creating sidebar</div>
+        <div class="popup" id="popup">Popup elements appear here</div>
+        <button onclick="document.getElementById('popup').style.display='block'">open popoup</button>
+        <div class="box1"></div>
+        <div class="box2"></div>
+
+    <h1>TABLE USING CSS</h1>
+    <div style="overflow-x:auto;">
+   <table id="Student"> 
+    <tr>
+        <td>NAME</td>
+        <td>REG NO.</td>
+        <td>CLASS</td>
+    </tr>
+    <tr>
+        <td>X</td>
+        <td>11</td>
+        <td>BCA VI</td>
+    </tr>
+    <tr>
+        <td>Y</td>
+        <td>12</td>
+        <td>BCA VI</td>
+    </tr>
+    <tr>
+        <td>Z</td>
+        <td>13</td>
+        <td>BCA VI</td>
+    </tr>
+    <tr>
+        <td>P</td>
+        <td>14</td>
+        <td>BCA VI</td>
+    </tr>
+    <tr>
+        <td>R</td>
+        <td>16</td>
+        <td>BCA VI</td>
+    </tr>
+    <tr>
+        <td>S</td>
+        <td>17</td>
+        <td>BCA VI</td>
+    </tr>
+    <tr>
+        <td>T</td>
+        <td>18</td>
+        <td>BCA VI</td>
+    </tr>
+</table>
+    </div>
+</center>
+<div class="sticky1">CREATING TABLES</div>
+<div class="ancestor"> 
+    Example for absolute Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rerum est eum beatae ipsum! Quia nulla, totam impedit, laudantium incidunt alias voluptates ipsam repudiandae voluptate pariatur doloribus vitae eum officiis.
+<div class="absolute">absolute</div>
+</div>
+<p style="font-size: 50px;"> ipsum dolor sit amet consectetur adipisicing elit. Odio numquam repellat quia autem? Odit exercitationem eveniet maiores illo similique cupiditate ea dolorem deleniti, ipsa, quas omnis accusamus dolorum quos nulla.
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio saepe quam dolores nesciunt sint eveniet magni! Esse sit, libero nobis, quos quia veniam totam alias natus placeat temporibus nemo explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nulla quis sunt doloribus repellat blanditiis nihil itaque, vero in dolor architecto vel qui, voluptatem, explicabo sapiente aperiam nesciunt commodi atque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, earum repellendus laboriosam sint repudiandae a quidem natus veniam hic vel deleniti, ex nesciunt magnam fuga perspiciatis in blanditiis quae molestias.</p>
+</body>
+</html>
