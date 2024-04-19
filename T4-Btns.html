@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Buttons</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-5.3.3/bootstrap.min.css">
+  <!-- Additional CSS -->
+  <style>
+    /* Custom button styles */
+    .btn-custom {
+      margin: 5px;
+      margin-left: 30px;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      border-radius: 25px;
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+
+    .btn-custom:hover {
+      background-color: #0056b3;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+
+    .btn-custom:active {
+      transform: translateY(1px);
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .content {
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .btn-description {
+      margin-top: 10px;
+      font-style: italic;
+      color: #666;
+    }
+    body{
+        background-color: rgb(248, 244, 239);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" style="text-align: center; border: 3px solid black; border-radius: 20px; background-color: rgb(166, 213, 243); font-family: 'Courier New', Courier, monospace;">
+  <h1>BUTTONS SHOWCASE:</h1>
+  </div>
+<br>
+  <div>
+    <button type="button" class="btn btn-primary btn-custom">Primary</button>
+    <p class="btn-description" style="margin-left: 30px;">The primary action button stands out and represents the most important action on a page, such as submitting a form or making a purchase.</p>
+
+    <button type="button" class="btn btn-secondary btn-custom">Secondary</button>
+    <p class="btn-description" style="margin-left: 30px;">The secondary button is used for less important actions or as an alternative to the primary button. It's typically used for actions like canceling or going back.</p>
+
+    <button type="button" class="btn btn-success btn-custom">Success</button>
+    <p class="btn-description" style="margin-left: 30px;">The success button indicates a successful or positive action, such as completing a task successfully or confirming a successful operation.</p>
+
+    <button type="button" class="btn btn-danger btn-custom">Danger</button>
+    <p class="btn-description" style="margin-left: 30px;">The danger button warns users of potentially harmful or irreversible actions. It's commonly used for actions like deleting data or canceling a critical operation.</p>
+
+    <button type="button" class="btn btn-warning btn-custom">Warning</button>
+    <p class="btn-description" style="margin-left: 30px;">The warning button alerts users to potential issues or risks that need their attention. It's often used for actions that require caution or may have unexpected consequences.</p>
+
+    <button type="button" class="btn btn-info btn-custom">Info</button>
+    <p class="btn-description" style="margin-left: 30px;">The info button provides additional information or guidance to users. It's used for actions like displaying help messages or accessing additional resources.</p>
+
+    <button type="button" class="btn btn-light btn-custom">Light</button>
+    <p class="btn-description" style="margin-left: 30px;">The light button is subtle and non-intrusive. It's commonly used for secondary actions or as an alternative to more prominent buttons.</p>
+
+    <button type="button" class="btn btn-dark btn-custom">Dark</button>
+    <p class="btn-description" style="margin-left: 30px;">The dark button is used for actions that require a darker or more subdued appearance. It's often used in combination with lighter elements to create contrast.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+

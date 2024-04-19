@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.3/bootstrap.min.css">    <!-- Additional CSS for custom styling -->
+    <!-- Additional CSS for custom styling -->
+    <style>
+        .popover-header {
+            background-color: #77aadd;
+            color: white;
+            font-weight: bold;
+        }
+
+        .popover-body {
+            background-color: #729fcd;
+            color: #343a40;
+        }
+
+        /* Optional: Style for tooltips */
+        .tooltip-inner {
+            background-color: #7a9abb;
+            color: white;
+        }
+
+        .tooltip.bs-tooltip-top .arrow::before {
+            border-top-color: #343a40;
+        }
+
+        /* Custom styles for modal */
+        .modal-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(242, 231, 231, 0.982); /* Semi-transparent black overlay */
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: rgb(224, 160, 160);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            max-width: 500px;
+            width: 80%;
+            text-align: center;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<center>
+<body>
+    <div class="modal-body">
+        <h2 class="fs-5">Popover in a modal</h2>
+        <p>This <button class="btn btn-secondary" onclick="toggleModal('myModal')">button</button> triggers a modal on click.</p>
+        <hr>
+        <h2 class="fs-5">Tooltips in a modal</h2>
+        <p><a href="#" data-bs-toggle="tooltip" title="Tooltip">This link</a> and <a href="#" data-bs-toggle="tooltip" title="Tooltip">that link</a> have tooltips on hover.</p>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal-background">
+        <div class="modal-content">
+            <span class="modal-close" onclick="toggleModal('myModal')">&times;</span>
+            <h3>Modal Title</h3>
+            <p>This is the content of the modal. You can put any text or form elements here.</p>
+            <button class="btn btn-primary" onclick="toggleModal('myModal')">Close</button>
+        </div>
+    </div>
+
+    <!-- Script to toggle modal visibility -->
+    <script>
+        function toggleModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = (modal.style.display === "block") ? "none" : "block";
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+

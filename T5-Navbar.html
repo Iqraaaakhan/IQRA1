@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractive Navbar</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.3/bootstrap.min.css">
+    <!-- Additional CSS -->
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #c0daf1; 
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar-brand {
+            color: #147fe9; 
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: #010912;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #db8ee9;
+        }
+
+        /* Optional: Adding some padding to the navbar */
+        .navbar {
+            padding: 1rem 0;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid" style="background-color: rgb(245, 192, 210); height: 120px;">
+          <a class="navbar-brand" href="#">Creative Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Web Design</a></li>
+                  <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+                  <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                  <li><a class="dropdown-item" href="#">SEO</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-5">
+        <h2>Welcome to My Navbar!</h2>
+        <p>Navbars are really useful in a page.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, sit iste quod voluptatibus inventore consectetur quo eaque aut voluptates eos iure consequatur, placeat, quasi autem? Veniam a tempore laborum! Aliquam!!</p>
+      </div>
+</body>
+</html>
+
+
+
